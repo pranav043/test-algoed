@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+    <div id="login-form">
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <button onclick="login()">Login</button>
+    </div>
+    <div class="loader" id="loader"></div>
+    <div id="input-form" class="hidden">
+      <h2>Input Form</h2>
+      <select id="spots"></select>
+      <input type="number" id="cyclic-speed" placeholder="Cyclic Speed">
+      <input type="number" id="daily-hours" placeholder="Daily Cycling Hours">
+      <button onclick="calculate()">Calculate</button>
+      <div id="result"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
